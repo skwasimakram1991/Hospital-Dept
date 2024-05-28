@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mater Hospital</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        a:-webkit-any-link:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="wrap">
+
+        <!-- ! Sidebar ! -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <div class="menulist">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="images/dashicon-normal.svg" alt="" class="display-normal">
+                            <img src="images/dashicon-onhover.svg" alt="" class="display-onhover">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form.html">
+                            <img src="images/noteicon-normal.svg" alt="" class="display-normal">
+                            <img src="images/noteicon-onhover.svg" alt="" class="display-onhover">
+                            Form
+                        </a>
+                    </li>
+                    <li>
+                        <a href="doctors.html">
+                            <img src="images/doctoricon-normal.svg" alt="" class="display-normal">
+                            <img src="images/doctoricon-onhover.svg" alt="" class="display-onhover">
+                            Doctors
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="blogs.html">
+                            <img src="images/booksicon-normal.svg" alt="" class="display-normal">
+                            <img src="images/booksicon-onhover.svg" alt="" class="display-onhover">
+                            Blogs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logout">
+                <img src="images/sideiconbottom.svg" alt="">
+                <a href="#?"><img src="images/logouticon.svg" alt="">Logout</a>
+            </div>
+        </div>
+        <!-- Sidebar -->
+
+        <div class="content">
+
+            <!-- Topbar -->
+            <div class="topbar">
+
+                <div class="top-left">
+                    <h3>Dashboard</h3>
+                </div>
+
+                <div class="top-right">
+                    <ul>
+
+                        <li>
+                            <a href="#!">
+                                <div class="profile">
+                                    <img src="images/admin.svg" alt="" class="profile-pic">
+                                    <div class="pr-txt">
+                                        <h3 class="fs16">
+                                            admin
+                                        </h3>
+                                        <!-- <span class="fs12">Safari</span> -->
+                                    </div>
+                                    <img src="images/arrow_drop_down.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- Topbar -->
+
+            <div class="main-content">
+                <div class="fullsection">
+                    <div class="breadcrumb-custom">
+                        <ul>
+                            <li>
+                                <a href="#?">Form</a>
+                            </li>
+                            <li>
+                                Brest Surgical Service Form
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="serviceform">
+                        <h5>Brest Surgical Service Form</h5>
+                        <div class="serviceformeachouter">
+                            <div class="serviceformeach">
+                                <div class="draghandle">
+                                    <img src="images/draghandle.svg" alt="">
+                                </div>
+                                <div class="dragcontent">
+                                    <div class="topbartitle">
+                                        <h6>Consultant ( Breast ) <img src="images/compose-mail.svg" alt=""></h6>
+                                        <div class="checkanddel">
+                                            <label> <input type="checkbox" name="" id=""> Required</label>
+                                            <label> <input type="checkbox" name="" id=""> Show</label>
+                                            <a href="#?"> <img src="images/trash_1.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="choicediv">
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="radio" name="s1" id="">
+                                                Choice 1
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="radio" name="s1" id="">
+                                                Choice 2
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="addchoicerow">
+                                        <a href="#?" class="addbtn">
+                                            <span>
+                                                <img src="images/plus-small.svg" alt="">
+                                                Add More Choice
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="serviceformeach">
+                                <div class="draghandle">
+                                    <img src="images/draghandle.svg" alt="">
+                                </div>
+                                <div class="dragcontent">
+                                    <div class="topbartitle">
+                                        <h6>Patient MRN <img src="images/compose-mail.svg" alt=""></h6>
+                                        <div class="checkanddel">
+                                            <label> <input type="checkbox" name="" id=""> Required</label>
+                                            <label> <input type="checkbox" name="" id=""> Show</label>
+                                            <a href="#?"> <img src="images/trash_1.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="inputcontainer">
+                                        <input type="text" name="" id="" placeholder="Open text field">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="serviceformeach">
+                                <div class="draghandle">
+                                    <img src="images/draghandle.svg" alt="">
+                                </div>
+                                <div class="dragcontent">
+                                    <div class="topbartitle">
+                                        <h6>Date of Intervention <img src="images/compose-mail.svg" alt=""></h6>
+                                        <div class="checkanddel">
+                                            <label> <input type="checkbox" name="" id=""> Required</label>
+                                            <label> <input type="checkbox" name="" id=""> Show</label>
+                                            <a href="#?"> <img src="images/trash_1.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="inputcontainer">
+                                        <input type="text" class="date" name="" id="" placeholder="DD / MM / YYYY">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="serviceformeach">
+                                <div class="draghandle">
+                                    <img src="images/draghandle.svg" alt="">
+                                </div>
+                                <div class="dragcontent">
+                                    <div class="topbartitle">
+                                        <h6>Select Time <img src="images/compose-mail.svg" alt=""></h6>
+                                        <div class="checkanddel">
+                                            <label> <input type="checkbox" name="" id=""> Required</label>
+                                            <label> <input type="checkbox" name="" id=""> Show</label>
+                                            <a href="#?"> <img src="images/trash_1.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="inputcontainer">
+                                        <input type="text" class="time" name="" id="" placeholder="HH / mm">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="serviceformeach">
+                                <div class="draghandle">
+                                    <img src="images/draghandle.svg" alt="">
+                                </div>
+                                <div class="dragcontent">
+                                    <div class="topbartitle">
+                                        <h6>Surgical Procedure (General)<img src="images/compose-mail.svg" alt=""></h6>
+                                        <div class="checkanddel">
+                                            <label> <input type="checkbox" name="" id=""> Required</label>
+                                            <label> <input type="checkbox" name="" id=""> Show</label>
+                                            <a href="#?"> <img src="images/trash_1.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="choicediv">
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="radio" name="s2" id="">
+                                                Choice 1
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="radio" name="s2" id="">
+                                                Choice 2
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="add_optin">
+                                        <a href="#" class="add_mre">
+                                            <img src="./images/plus-small.svg" alt="">
+                                            <span>Add More Choice</span>
+                                        </a>
+
+                                        <a href="#" class="add_othr">Add Other Option</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="serviceformeach">
+                                <div class="draghandle">
+                                    <img src="images/draghandle.svg" alt="">
+                                </div>
+                                <div class="dragcontent">
+                                    <div class="topbartitle">
+                                        <h6>Surgical Procedure (Brest) <img src="images/compose-mail.svg" alt=""></h6>
+                                        <div class="checkanddel">
+                                            <label> <input type="checkbox" name="" id=""> Required</label>
+                                            <label> <input type="checkbox" name="" id=""> Show</label>
+                                            <a href="#?"> <img src="images/trash_1.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="choicediv">
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="checkbox" name="s3" id="">
+                                                Choice 1
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="checkbox" name="s3" id="">
+                                                Choice 2
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="checkbox" name="s3" id="">
+                                                Other
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                            <div class="inputcontainer">
+                                                <input class="mt12" type="text" placeholder="Open text field">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="add_optin">
+                                        <a href="#" class="add_mre">
+                                            <img src="./images/plus-small.svg" alt="">
+                                            <span>Add More Choice</span>
+                                        </a>
+
+                                        <a href="#" class="add_othr disabled">Add Other Option</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="serviceformeach">
+                                <div class="draghandle">
+                                    <img src="images/draghandle.svg" alt="">
+                                </div>
+                                <div class="dragcontent">
+                                    <div class="topbartitle">
+                                        <h6>Complication Grade (Clavien-Dindo) <img src="images/compose-mail.svg"
+                                                alt=""></h6>
+                                        <div class="checkanddel">
+                                            <label> <input type="checkbox" name="" id=""> Required</label>
+                                            <label> <input type="checkbox" name="" id=""> Show</label>
+                                            <a href="#?"> <img src="images/trash_1.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="choicediv">
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="radio" name="s5" id="">
+                                                Choice 1
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="radio" name="s5" id="">
+                                                Choice 2
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="add_optin">
+                                        <a href="#" class="add_mre">
+                                            <img src="./images/plus-small.svg" alt="">
+                                            <span>Add More Choice</span>
+                                        </a>
+
+                                        <a href="#" class="add_othr">Add Other Option</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="serviceformeach">
+                                <div class="draghandle">
+                                    <img src="images/draghandle.svg" alt="">
+                                </div>
+                                <div class="dragcontent">
+                                    <div class="topbartitle">
+                                        <h6>Complication Type <img src="images/compose-mail.svg" alt=""></h6>
+                                        <div class="checkanddel">
+                                            <label> <input type="checkbox" name="" id=""> Required</label>
+                                            <label> <input type="checkbox" name="" id=""> Show</label>
+                                            <a href="#?"> <img src="images/trash_1.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="choicediv">
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="checkbox" name="s3" id="">
+                                                Choice 1
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="checkbox" name="s3" id="">
+                                                Choice 2
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="checkbox" name="s3" id="">
+                                                Other
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                            <div class="inputcontainer">
+                                                <input class="mt12" type="text" placeholder="Open text field">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="add_optin">
+                                        <a href="#" class="add_mre">
+                                            <img src="./images/plus-small.svg" alt="">
+                                            <span>Add More Choice</span>
+                                        </a>
+
+                                        <a href="#" class="add_othr disabled">Add Other Option</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="serviceformeach">
+                                <div class="draghandle">
+                                    <img src="images/draghandle.svg" alt="">
+                                </div>
+                                <div class="dragcontent">
+                                    <div class="topbartitle">
+                                        <h6>Complications (Breast) <img src="images/compose-mail.svg" alt=""></h6>
+                                        <div class="checkanddel">
+                                            <label> <input type="checkbox" name="" id=""> Required</label>
+                                            <label> <input type="checkbox" name="" id=""> Show</label>
+                                            <a href="#?"> <img src="images/trash_1.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="choicediv">
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="checkbox" name="s3" id="">
+                                                Choice 1
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="checkbox" name="s3" id="">
+                                                Choice 2
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                        </div>
+                                        <div class="choicerow">
+                                            <label>
+                                                <input type="checkbox" name="s3" id="">
+                                                Other
+                                            </label>
+                                            <span class="cross"><img src="images/cross-1.svg" alt=""></span>
+                                            <div class="inputcontainer">
+                                                <input class="mt12" type="text" placeholder="Open text field">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="add_optin">
+                                        <a href="#" class="add_mre">
+                                            <img src="./images/plus-small.svg" alt="">
+                                            <span>Add More Choice</span>
+                                        </a>
+
+                                        <a href="#" class="add_othr disabled">Add Other Option</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="serviceformeach">
+                                <div class="draghandle">
+                                    <img src="images/draghandle.svg" alt="">
+                                </div>
+                                <div class="dragcontent">
+                                    <div class="topbartitle">
+                                        <h6>Complication Description <img src="images/compose-mail.svg" alt=""></h6>
+                                        <div class="checkanddel">
+                                            <label> <input type="checkbox" name="" id=""> Required</label>
+                                            <label> <input type="checkbox" name="" id=""> Show</label>
+                                            <a href="#?"> <img src="images/trash_1.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="inputtextarea">
+                                        <textarea name="" id="" placeholder="Description Field"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="serviceformeach">
+                                <div class="draghandle">
+                                    <img src="images/draghandle.svg" alt="">
+                                </div>
+                                <div class="dragcontent">
+                                    <div class="topbartitle">
+                                        <h6>Upload A File <img src="images/compose-mail.svg" alt=""></h6>
+                                        <div class="checkanddel">
+                                            <label> <input type="checkbox" name="" id=""> Required</label>
+                                            <label> <input type="checkbox" name="" id=""> Show</label>
+                                            <a href="#?"> <img src="images/trash_1.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <a href="#?" class="uploadbtn">
+                                        <img src="images/uploadicon.svg" alt="">
+                                        Upload File
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addsection">
+                            <a href="#?" class="addsection btn">Add Section</a>
+                        </div>
+                        <div class="publishform">
+                            <input type="submit" class="btn yellow" value="Publish Form">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                <p>© 2024 The Mater Hospital, all rights reserved.</p>
+            </footer>
+            <!-- Footer -->
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/equalheight.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
