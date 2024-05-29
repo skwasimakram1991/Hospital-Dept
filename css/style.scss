@@ -2628,3 +2628,126 @@ footer {
     justify-content: flex-start;
     gap: 16px;
 }
+
+.loginpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .login-image {
+        width: 60%;
+        overflow: hidden;
+        height: 100%;
+        img {
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            scale: 1.002;
+            height: 100%;
+        }
+    }
+    .login-content {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background: white;
+        .logininner {
+            max-width: 418px;
+            width: 100%;
+
+            .login-header {
+                margin-bottom: 40px;
+                text-align: center;
+
+                .logo {
+                    width: 180px;
+                    display: inline-block;
+                    height: auto;
+                }
+            }
+
+            .login-form {
+                .form-group {
+                    // margin-bottom: 15px;
+                    position: relative;
+                    h1 {
+                        color: #000;
+                        font-family: Helvetica;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin-bottom: 20px;
+                    }
+                    label {
+                        display: block;
+                        color: var(--Balck, #090914);
+                        font-family: Urbanist;
+                        font-size: 14px !important;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px; /* 171.429% */
+                        margin-bottom: 8px;
+                    }
+
+                    .passcontainer {
+                        position: relative;
+                    }
+
+                    input {
+                        border-radius: 6px;
+                        border: 1px solid #d9d8d8;
+                        background: var(--Color-1, #fff);
+                        color: var(--Text-Grey, #6f7c81);
+                        font-family: Urbanist;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+
+                        &[type="password"] {
+                            width: 100%;
+                        }
+                    }
+
+                    .password-toggle {
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .forgot-password {
+                    color: var(--Yellow, #f0a941);
+                    font-family: Urbanist;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                .forgot {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin-bottom: 40px;
+                }
+                .btn {
+                    background-color: #f0a941;
+                    display: block;
+                    width: 100%;
+                    color: var(--Color-1, #fff);
+                    font-family: Urbanist;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px; /* 150% */
+                }
+            }
+        }
+    }
+}

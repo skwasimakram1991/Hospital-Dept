@@ -73,6 +73,45 @@
         width: 240px;
     }
 
+    .loginpage .login-content .logininner {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .loginpage .login-content {
+        max-width: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        background: white;
+        position: absolute;
+        padding: 20px 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+        width: 90%;
+    }
+
+
+    .loginpage {
+        position: relative;
+    }
+
+    .loginpage .login-image {
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .loginpage .login-image img {
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        scale: 1.002;
+        height: 100%;
+    }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -455,5 +494,19 @@
         top: 1px;
     }
 
+    .loginpage .login-content .logininner .login-header .logo {
+        width: 130px;
+        display: inline-block;
+        height: auto;
+    }
 
+    .loginpage .login-content .logininner .login-header {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .loginpage .login-content .logininner .login-form .form-group h1 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }

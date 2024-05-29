@@ -2399,4 +2399,116 @@ footer p {
   align-items: center;
   justify-content: flex-start;
   gap: 16px;
+}
+
+.loginpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.loginpage .login-image {
+  width: 60%;
+  overflow: hidden;
+  height: 100%;
+}
+.loginpage .login-image img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  scale: 1.002;
+  height: 100%;
+}
+.loginpage .login-content {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: white;
+}
+.loginpage .login-content .logininner {
+  max-width: 418px;
+  width: 100%;
+}
+.loginpage .login-content .logininner .login-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.loginpage .login-content .logininner .login-header .logo {
+  width: 180px;
+  display: inline-block;
+  height: auto;
+}
+.loginpage .login-content .logininner .login-form .form-group {
+  position: relative;
+}
+.loginpage .login-content .logininner .login-form .form-group h1 {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.loginpage .login-content .logininner .login-form .form-group label {
+  display: block;
+  color: var(--Balck, #090914);
+  font-family: Urbanist;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+  margin-bottom: 8px;
+}
+.loginpage .login-content .logininner .login-form .form-group .passcontainer {
+  position: relative;
+}
+.loginpage .login-content .logininner .login-form .form-group input {
+  border-radius: 6px;
+  border: 1px solid #d9d8d8;
+  background: var(--Color-1, #fff);
+  color: var(--Text-Grey, #6f7c81);
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.loginpage .login-content .logininner .login-form .form-group input[type=password] {
+  width: 100%;
+}
+.loginpage .login-content .logininner .login-form .form-group .password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.loginpage .login-content .logininner .login-form .forgot-password {
+  color: var(--Yellow, #f0a941);
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.loginpage .login-content .logininner .login-form .forgot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.loginpage .login-content .logininner .login-form .btn {
+  background-color: #f0a941;
+  display: block;
+  width: 100%;
+  color: var(--Color-1, #fff);
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
 }/*# sourceMappingURL=style.css.map */
