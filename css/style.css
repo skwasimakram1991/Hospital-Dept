@@ -2511,4 +2511,72 @@ footer p {
   font-style: normal;
   font-weight: 600;
   line-height: 24px; /* 150% */
+}
+
+.boxcontainerouter {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  padding-bottom: 24px;
+}
+.boxcontainerouter .boxcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 40px;
+}
+.boxcontainerouter .boxcontainer .box span {
+  color: var(--Text-Grey, #6f7c81);
+  font-family: Urbanist;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  margin-bottom: 12px;
+}
+.boxcontainerouter .boxcontainer .box h6 {
+  color: var(--Balck, #090914);
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+}
+.boxcontainerouter .boxcontainer .box ul li {
+  color: var(--Balck, #090914);
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 6px;
+  position: relative;
+  padding: 0 0 0 22px;
+}
+.boxcontainerouter .boxcontainer .box ul li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../images/greentick.svg") no-repeat 0 0;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+.boxcontainerouter .boxcontainer .box ul li:last-child {
+  margin-bottom: 0;
+}
+.boxcontainerouter .boxcontainer .box .btn.black {
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: var(--Balck, #090914);
+  color: var(--Color-1, #fff);
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }/*# sourceMappingURL=style.css.map */
