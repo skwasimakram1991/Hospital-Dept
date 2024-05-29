@@ -379,20 +379,6 @@ label.checkbox input[type=checkbox] {
   color: var(--Dark-Gray, #505050);
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #666;
-  border-radius: 20px;
-}
-
-::-webkit-scrollbar-track {
-  background: #ddd;
-  border-radius: 20px;
-}
-
 .wrap {
   display: flex;
   align-items: flex-start;
@@ -594,6 +580,17 @@ footer p {
 .main-content {
   overflow-y: auto;
   padding: 48px;
+}
+.main-content::-webkit-scrollbar {
+  width: 10px;
+}
+.main-content::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+.main-content::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
 }
 .main-content .mb40 {
   margin-bottom: 40px;

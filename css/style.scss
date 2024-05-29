@@ -413,22 +413,7 @@ header {
 }
 
 //! Font size
-// ! Scroller
-::-webkit-scrollbar {
-    width: 10px;
-}
 
-::-webkit-scrollbar-thumb {
-    background: #666;
-    border-radius: 20px;
-}
-
-::-webkit-scrollbar-track {
-    background: #ddd;
-    border-radius: 20px;
-}
-
-// ! Scroller
 // ! wrap
 .wrap {
     display: flex;
@@ -680,6 +665,22 @@ footer {
 .main-content {
     overflow-y: auto;
     padding: 48px;
+    // ! Scroller
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #666;
+        border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #ddd;
+        border-radius: 20px;
+    }
+
+    // ! Scroller
     .mb40 {
         margin-bottom: 40px;
         &:last-child {

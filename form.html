@@ -28,7 +28,7 @@
     <div class="wrap">
 
         <!-- ! Sidebar ! -->
-        <div class="sidebar">
+        <div class="sidebar active">
             <div class="logo">
                 <img src="images/logo.svg" alt="">
             </div>
@@ -77,6 +77,10 @@
             <div class="topbar">
 
                 <div class="top-left">
+                    <div class="hamburger-menu">
+                        <div class="bar animate"></div>
+                        <!-- ! animate class will be added when responsive menu is clicked to show the animation ! -->
+                    </div>
                     <h3>Dashboard</h3>
                 </div>
 
@@ -131,217 +135,233 @@
                         </div>
                         <div class="doctorslist">
                             <div class="doctor-listinner">
-                                <table class="w-100">
-                                    <tbody>
-                                        <tr>
-                                            <th width="71">#</th>
-                                            <th width="413"><span>Doctors Name <img src="images/updownarrow.svg"
-                                                        alt=""></span></th>
-                                            <th width="230">Patient MRN</th>
-                                            <th width="230"><span>Date of Discharge <img src="images/updownarrow.svg"
-                                                        alt=""></span>
-                                            </th>
-                                            <th class="text-center" width="250">Action</th>
-                                        </tr>
-                                        <tr>
-                                            <td>01</td>
-                                            <td>
-                                                <img src="images/pp-1.svg" alt=""> Talan Dias
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-20</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>02</td>
-                                            <td>
-                                                <img src="images/pp-2.svg" alt=""> Kianna Aminoff
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-15</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>03</td>
-                                            <td>
-                                                <img src="images/pp-3.svg" alt=""> Dulce Press
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-19</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>04</td>
-                                            <td>
-                                                <img src="images/pp-4.svg" alt=""> Maren Culhane
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-18</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>05</td>
-                                            <td>
-                                                <img src="images/pp-5.svg" alt=""> Makenna Kenter
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-20</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>06</td>
-                                            <td>
-                                                <img src="images/pp-6.svg" alt=""> Marilyn Dorwart
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-16</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>07</td>
-                                            <td>
-                                                <img src="images/pp-7.svg" alt=""> Desirae Torff
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-17</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                <div class="table-responsive">
+                                    <table class="scroller w-100">
+                                        <tbody>
+                                            <tr>
+                                                <th width="71">#</th>
+                                                <th width="413"><span>Doctors Name <img src="images/updownarrow.svg"
+                                                            alt=""></span></th>
+                                                <th width="230">Patient MRN</th>
+                                                <th width="230"><span>Date of Discharge <img
+                                                            src="images/updownarrow.svg" alt=""></span>
+                                                </th>
+                                                <th class="text-center" width="250">Action</th>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>
+                                                    <img src="images/pp-1.svg" alt=""> Talan Dias
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-20</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>02</td>
+                                                <td>
+                                                    <img src="images/pp-2.svg" alt=""> Kianna Aminoff
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-15</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>
+                                                    <img src="images/pp-3.svg" alt=""> Dulce Press
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-19</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>04</td>
+                                                <td>
+                                                    <img src="images/pp-4.svg" alt=""> Maren Culhane
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-18</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>05</td>
+                                                <td>
+                                                    <img src="images/pp-5.svg" alt=""> Makenna Kenter
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-20</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>06</td>
+                                                <td>
+                                                    <img src="images/pp-6.svg" alt=""> Marilyn Dorwart
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-16</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>07</td>
+                                                <td>
+                                                    <img src="images/pp-7.svg" alt=""> Desirae Torff
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-17</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
 
-                                        <tr>
-                                            <td>01</td>
-                                            <td>
-                                                <img src="images/pp-1.svg" alt=""> Talan Dias
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-20</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>02</td>
-                                            <td>
-                                                <img src="images/pp-2.svg" alt=""> Kianna Aminoff
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-15</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>03</td>
-                                            <td>
-                                                <img src="images/pp-3.svg" alt=""> Dulce Press
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-19</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>04</td>
-                                            <td>
-                                                <img src="images/pp-4.svg" alt=""> Maren Culhane
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-18</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>05</td>
-                                            <td>
-                                                <img src="images/pp-5.svg" alt=""> Makenna Kenter
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-20</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>06</td>
-                                            <td>
-                                                <img src="images/pp-6.svg" alt=""> Marilyn Dorwart
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-16</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>07</td>
-                                            <td>
-                                                <img src="images/pp-7.svg" alt=""> Desirae Torff
-                                            </td>
-                                            <td>449003</td>
-                                            <td>2024-05-17</td>
-                                            <td>
-                                                <div class="downloadsection">
-                                                    <a href="#!" class="icon"><img src="images/downloadbtn.svg" alt="">
-                                                        View Details</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>
+                                                    <img src="images/pp-1.svg" alt=""> Talan Dias
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-20</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>02</td>
+                                                <td>
+                                                    <img src="images/pp-2.svg" alt=""> Kianna Aminoff
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-15</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>
+                                                    <img src="images/pp-3.svg" alt=""> Dulce Press
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-19</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>04</td>
+                                                <td>
+                                                    <img src="images/pp-4.svg" alt=""> Maren Culhane
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-18</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>05</td>
+                                                <td>
+                                                    <img src="images/pp-5.svg" alt=""> Makenna Kenter
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-20</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>06</td>
+                                                <td>
+                                                    <img src="images/pp-6.svg" alt=""> Marilyn Dorwart
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-16</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>07</td>
+                                                <td>
+                                                    <img src="images/pp-7.svg" alt=""> Desirae Torff
+                                                </td>
+                                                <td>449003</td>
+                                                <td>2024-05-17</td>
+                                                <td>
+                                                    <div class="downloadsection">
+                                                        <a href="#!" class="icon"><img src="images/downloadbtn.svg"
+                                                                alt="">
+                                                            View Details</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                         <div class="listpagination">
@@ -377,7 +397,7 @@
             <!-- Footer -->
         </div>
     </div>
-
+    <div class="backdrop"></div>
     <!-- Bootstrap core JavaScript
             ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

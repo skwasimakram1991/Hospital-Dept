@@ -28,7 +28,8 @@
     <div class="wrap">
 
         <!-- ! Sidebar ! -->
-        <div class="sidebar">
+        <div class="sidebar active">
+            <!-- ! active class will be added when responsive menu is clicked to show the sidebar !-->
             <div class="logo">
                 <img src="images/logo.svg" alt="">
             </div>
@@ -77,6 +78,10 @@
             <div class="topbar">
 
                 <div class="top-left">
+                    <div class="hamburger-menu">
+                        <div class="bar animate"></div>
+                        <!-- ! animate class will be added when responsive menu is clicked to show the animation ! -->
+                    </div>
                     <h3>Dashboard</h3>
                 </div>
 
@@ -164,70 +169,72 @@
                                 </div>
                             </div>
                             <div class="doctor-listinner">
-                                <table class="w-100">
-                                    <tr>
-                                        <th>#</th>
-                                        <th><span>Doctors Name <img src="images/updownarrow.svg" alt=""></span></th>
-                                        <th>Email Address</th>
-                                        <th><span>Department <img src="images/updownarrow.svg" alt=""></span></th>
-                                    </tr>
-                                    <tr>
-                                        <td>01</td>
-                                        <td>
-                                            <img src="images/pp-1.svg" alt=""> Talan Dias
-                                        </td>
-                                        <td>georgia.young@example.com</td>
-                                        <td>Neurology</td>
-                                    </tr>
-                                    <tr>
-                                        <td>02</td>
-                                        <td>
-                                            <img src="images/pp-2.svg" alt=""> Kianna Aminoff
-                                        </td>
-                                        <td>bill.sanders@example.com</td>
-                                        <td>Neurology</td>
-                                    </tr>
-                                    <tr>
-                                        <td>03</td>
-                                        <td>
-                                            <img src="images/pp-3.svg" alt=""> Dulce Press
-                                        </td>
-                                        <td>willie.jennings@example.com</td>
-                                        <td>Neurology</td>
-                                    </tr>
-                                    <tr>
-                                        <td>04</td>
-                                        <td>
-                                            <img src="images/pp-4.svg" alt=""> Maren Culhane
-                                        </td>
-                                        <td>jessica.hanson@example.com</td>
-                                        <td>Neurology</td>
-                                    </tr>
-                                    <tr>
-                                        <td>05</td>
-                                        <td>
-                                            <img src="images/pp-5.svg" alt=""> Makenna Kenter
-                                        </td>
-                                        <td>deanna.curtis@example.com</td>
-                                        <td>Neurology</td>
-                                    </tr>
-                                    <tr>
-                                        <td>06</td>
-                                        <td>
-                                            <img src="images/pp-6.svg" alt=""> Marilyn Dorwart
-                                        </td>
-                                        <td>jackson.graham@example.com</td>
-                                        <td>Neurology</td>
-                                    </tr>
-                                    <tr>
-                                        <td>07</td>
-                                        <td>
-                                            <img src="images/pp-7.svg" alt=""> Desirae Torff
-                                        </td>
-                                        <td>alma.lawson@example.com</td>
-                                        <td>Neurology</td>
-                                    </tr>
-                                </table>
+                                <div class="table-responsive">
+                                    <table class="scroller w-100">
+                                        <tr>
+                                            <th>#</th>
+                                            <th><span>Doctors Name <img src="images/updownarrow.svg" alt=""></span></th>
+                                            <th>Email Address</th>
+                                            <th><span>Department <img src="images/updownarrow.svg" alt=""></span></th>
+                                        </tr>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>
+                                                <img src="images/pp-1.svg" alt=""> Talan Dias
+                                            </td>
+                                            <td>georgia.young@example.com</td>
+                                            <td>Neurology</td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>
+                                                <img src="images/pp-2.svg" alt=""> Kianna Aminoff
+                                            </td>
+                                            <td>bill.sanders@example.com</td>
+                                            <td>Neurology</td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>
+                                                <img src="images/pp-3.svg" alt=""> Dulce Press
+                                            </td>
+                                            <td>willie.jennings@example.com</td>
+                                            <td>Neurology</td>
+                                        </tr>
+                                        <tr>
+                                            <td>04</td>
+                                            <td>
+                                                <img src="images/pp-4.svg" alt=""> Maren Culhane
+                                            </td>
+                                            <td>jessica.hanson@example.com</td>
+                                            <td>Neurology</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05</td>
+                                            <td>
+                                                <img src="images/pp-5.svg" alt=""> Makenna Kenter
+                                            </td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Neurology</td>
+                                        </tr>
+                                        <tr>
+                                            <td>06</td>
+                                            <td>
+                                                <img src="images/pp-6.svg" alt=""> Marilyn Dorwart
+                                            </td>
+                                            <td>jackson.graham@example.com</td>
+                                            <td>Neurology</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07</td>
+                                            <td>
+                                                <img src="images/pp-7.svg" alt=""> Desirae Torff
+                                            </td>
+                                            <td>alma.lawson@example.com</td>
+                                            <td>Neurology</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -362,7 +369,7 @@
             <!-- Footer -->
         </div>
     </div>
-
+    <div class="backdrop"></div>
     <!-- Bootstrap core JavaScript
             ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
